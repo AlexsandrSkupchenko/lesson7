@@ -70,11 +70,13 @@ public class Main {
 //        System.out.println(sb);
 
 
-        Cat cat = new Cat("Barsik", 10);
+        Cat cat1 = new Cat("Barsik", 10);
+        Cat cat2 = new Cat("Murzik", 100);
         Plate plate = new Plate(100);
 
-        cat.eat(plate);
-
+        cat1.eat(plate);
+        cat2.eat(plate);
+        System.out.println("Осталось еды " + plate.getFood());
 
 
 
