@@ -71,11 +71,15 @@ public class Main {
 
 
         Cat cat1 = new Cat("Barsik", 30);
-        Cat cat2 = new Cat("Murzik", 100);
+        Cat cat2 = new Cat("Murzik", 60);
+        Cat cat3 = new Cat("Vasya", 20);
+        Cat cat4 = new Cat("Kity", 30);
         Plate plate = new Plate(100);
 
         cat1.eat(plate);
         cat2.eat(plate);
+        cat3.eat(plate);
+        cat4.eat(plate);
         System.out.println("Осталось еды " + plate.getFood());
 
 
