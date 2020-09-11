@@ -14,6 +14,7 @@ public class Plate {
 
     public boolean howmuchFood(int amount) {
         if (food < amount) {
+            System.out.println("Осталось еды " + food);
             return true;
         }
         return false;
@@ -21,6 +22,7 @@ public class Plate {
 
     public void decreaseFood(int amount) {
             this.food -= amount;
+            System.out.println("Осталось еды " + food);
     }
 
     @Override

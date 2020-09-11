@@ -11,9 +11,9 @@ public class Cat {
 
     public void eat(Plate plate) {
         if (plate.howmuchFood(amount) == true) {
-            System.out.println("Cat " + name + " есть не будет. Мало еды.");
+            System.out.println("Кот " + name + " есть не будет. Мало еды.");
         } else {
-            System.out.println("Cat " + name + " eat...");
+            System.out.println("Кот " + name + " поел...");
             plate.decreaseFood(amount);
         }
 
