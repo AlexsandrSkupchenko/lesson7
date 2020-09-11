@@ -41,6 +41,10 @@ public class Plate {
             this.food -= amount;
     }
 
+    public void addFood(int food) {
+        System.out.println("Добавка " + food);
+        this.food += food;
+    }
     @Override
     public String toString() {
         return "Plate{" +

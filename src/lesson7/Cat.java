@@ -13,19 +13,18 @@ public class Cat {
     public void eat(Plate plate) {
         if (plate.howmuchFood(amount) == true) {
             if (plate.getcatEat() == true) {
+                satiety = true;
                 plate.decreaseFood(amount);
-                System.out.println("Кот " + name + " поел..." + plate.getFood() + " осталось.");
+                System.out.println("Кот " + name + " поел..." + plate.getFood() + " осталось. Насытелся " + satiety);
             } else {
-                System.out.println("Кот " + name + " не доел " + plate.getTimFood() + " еды.");
+                satiety = false;
+                System.out.println("Кот " + name + " не доел " + plate.getTimFood() + " еды. Не насытился " + satiety);
             }
         } else {
-            System.out.println("Кот " + name + " не поел. Еды нет");
-            plate.getFood();
+            satiety = false;
+            System.out.println("Кот " + name + " не поел. Еды нет. Голодный " + satiety);
         }
     }
-//    public void catHunger() {
-//
-//    }
 
     @Override
     public String toString() {
@@ -35,12 +34,5 @@ public class Cat {
                 ", satiety=" + satiety +
                 '}';
     }
-    //    public String getName() {
-//        return name;
-//    }
-
-//    //public void fear(Dog dog){
-//        System.out.println("Cat "+ name+" fear dog "+ dog.getName());
-//    }
 }
 
