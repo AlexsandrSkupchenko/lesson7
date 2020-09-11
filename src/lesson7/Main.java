@@ -70,7 +70,7 @@ public class Main {
 //        System.out.println(sb);
 
 
-        Cat cat1 = new Cat("Barsik", 10);
+        Cat cat1 = new Cat("Barsik", 30);
         Cat cat2 = new Cat("Murzik", 100);
         Plate plate = new Plate(100);
 
